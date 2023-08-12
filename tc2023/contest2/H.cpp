@@ -12,5 +12,15 @@ typedef pair<int, int> ii;
 
 
 int main() {FIN;
+    int cnts[4];
+    fore(i,0,4){
+        cin >> cnts[i];
+    }
+    if (((cnts[0] != cnts[3]) && cnts[0] == 0) || (cnts[2]>0 && cnts[0]==0)){
+        cout << 0 << "\n";
+    }
+    else{
+        cout << 1 << "\n";  
+    }
 	return 0;
 }
